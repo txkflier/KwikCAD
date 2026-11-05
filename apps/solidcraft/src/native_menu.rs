@@ -20,7 +20,7 @@ pub struct NativeMenu {
 impl NativeMenu {
     pub fn new(app: &SolveApp, ctx: &egui::Context) -> muda::Result<Self> {
         let menu = Menu::new();
-        let application = Submenu::new("SolidCraft", true);
+        let application = Submenu::new("KwikCAD", true);
         let file = Submenu::new(app.tr("ui.file"), true);
         let edit = Submenu::new(app.tr_label("Edit"), true);
         let recent = Submenu::new(app.tr("ui.open_recent"), true);
